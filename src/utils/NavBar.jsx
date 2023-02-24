@@ -14,12 +14,12 @@ export const NavBar = () => {
                 to='/'
               >Ingresos</NavLink>
             </li>   
-            <li>
+            {/* <li>
               <NavLink 
                 className={ ({isActive}) => `${isActive ? 'NavLink__onclick': ''}` }
                 to='/demas'
               >Gastos</NavLink>
-            </li>     
+            </li>      */}
         </ul>
     </nav>
   )

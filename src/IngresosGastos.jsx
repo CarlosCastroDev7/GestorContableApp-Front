@@ -9,7 +9,7 @@ export const IngresosGastos = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Ingresos />} />
-        <Route path="/demas" element={<Gastos />} />
+        {/* <Route path="/demas" element={<Gastos />} /> */}
       </Routes>
     </>
     
