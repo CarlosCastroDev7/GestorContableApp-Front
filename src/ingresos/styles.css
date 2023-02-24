@@ -1,0 +1,97 @@
+.h1_Ingresos{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.form__ingresos{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 1px solid rgb(255, 249, 249);
+    border-radius: 10px;
+
+    background-color: rgb(112, 103, 91);
+}
+.form__ingresos input{
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 10px;
+    padding: 5px 0;
+    
+}
+
+.form__div__inputs{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input__date{
+    width: 30%;
+    min-width: 120px;
+    max-width: 160px;
+    
+}
+.input__concepto{
+    width: 30%;
+    min-width: 300px;
+}
+.input__valor{
+    width: 30%;
+    min-width: 100px;
+    max-width: 140px;
+}
+
+.button__agregar{
+    background-color: rgba(0, 0, 0, 0.569);
+    color: white;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+/* Ingresos */
+
+.listados{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.listados__p{
+
+    padding: 10px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 90px;
+    width: 15%;
+    text-align: center;
+
+}
+.concepto{
+    width: 60% !important;
+    background-color: #d8d8d8;
+}
+.date{
+    background-color: #000000;
+    color: white;
+}
+.valor{
+    background-color: #d8d8d8;
+}
+
+.encabezados{
+    background-color: #000000;
+    color: white;
+}
+.encabezados_concepto{
+    background-color: #000000;
+    color: white;
+    width: 60% !important;
+}
