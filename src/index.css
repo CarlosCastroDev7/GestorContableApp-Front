@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --primary-color: #007bff;
+  --white: #ffffff;
+  --black: #000000;
+  --light: hsl(219, 9%, 45%);
+  --contain: #f6f8fb;
+  --color: rgba(34, 51, 84, 0.7);
+}
+
+html,
+body {
+  background-color: var(--contain);
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 120px;
-    height: 90vh;
-    width: 90%;
-    margin:  30px auto;
+  display: flex;
+  align-items: center;
+  gap: 300px;
 }
