@@ -1,47 +1,71 @@
-.nav__principal {
-    width: 70px;
-    height: 100%;
-    border-radius: 30px;
-    background-color: var(--primary-color);
-    padding: 25px;
-    transition: .3s ease-in-out all;
-
+.nav {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 70px;
+  border-radius: 0 30px 30px 0;
+  background-color: var(--white);
+  padding: 30px 10px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out all;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.nav__principal:hover {
-    width: 170px;
+.nav:hover {
+  width: 200px;
 }
 
-.nav__content .nav__item {
-    display: none;
+.nav:not(:hover) .nav__title,
+.nav__item a,
+.header__legend {
+  display: none;
 }
 
-.nav__principal:hover .nav__content .nav__item {
-    display: flex;
+.header__legend {
+  white-space: nowrap;
+  color: var(--light);
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav__ul {
-    list-style: none;
+  list-style: none;
+  height: 87%;
 }
 
 .nav__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.nav__item a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    width: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 0;
+  transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 10px;
+  width: 150px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .nav__content span {
-    display: inline-block;
-    color: white;
-    font-weight: 500;
-    width: 100px;
+  color: var(--black);
+  font-size: 1.7rem;
+}
+
+.nav__item a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.nav__content:hover .nav__item a {
+  margin-bottom: 3px;
+  border-bottom: 2px solid #00dbde;
+}
+
+.nav:hover .header__legend {
+  display: inline-block;
 }
